@@ -15,6 +15,23 @@
         </div>
         <button id="generator-btn">Generate Numbers</button>
     </div>
+
+    <div class="container partnership-section">
+        <h2>Partnership Inquiry</h2>
+        <p>Interested in working together? Send us a message!</p>
+        <form action="https://formspree.io/f/mqakoeqz" method="POST" class="inquiry-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" id="submit-btn">Send Message</button>
+        </form>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
