@@ -34,7 +34,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.partnership-section {
+.partnership-section, .disqus-section {
     margin-top: 2rem;
     padding: 2rem;
 }
