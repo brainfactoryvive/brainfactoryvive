@@ -3,51 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <title>Ultimate Lotto Number Generator | Professional Tools & Insights</title>
+    <meta name="description" content="Generate random lotto numbers with our professional tool. Get free lottery tips, statistical insights, and responsible gaming advice.">
+    <meta name="keywords" content="lotto generator, lottery numbers, random number generator, lotto tips, lottery statistics">
     <meta name="google-adsense-account" content="ca-pub-2390125227102148">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2390125227102148"
      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
-        <h1>Lotto Generator</h1>
-        <div class="lotto-numbers">
-            <!-- Numbers will be generated here -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">LottoGen Pro</div>
+            <ul class="nav-links">
+                <li><a href="#generator">Generator</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#partnership">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="generator" class="hero-section">
+            <div class="container">
+                <h1>Professional Lotto Generator</h1>
+                <p class="subtitle">Generate your lucky numbers with our fair randomization algorithm.</p>
+                <div class="lotto-numbers">
+                    <!-- Numbers will be generated here -->
+                </div>
+                <button id="generator-btn">Generate Lucky Numbers</button>
+            </div>
+        </section>
+
+        <section id="how-to" class="info-section">
+            <div class="container">
+                <h2>How to Use This Tool</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>1. Click Generate</h3>
+                        <p>Press the button to initiate our high-entropy randomization engine.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>2. View Numbers</h3>
+                        <p>Six unique numbers from 1 to 45 will be displayed instantly.</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>3. Save & Play</h3>
+                        <p>Use these numbers for your next ticket. Good luck!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="insights" class="content-section">
+            <div class="container text-left">
+                <h2>Lotto Strategy & Insights</h2>
+                <div class="rich-content">
+                    <h3>Understanding Randomness</h3>
+                    <p>Every lottery draw is an independent event. While many players look for "hot" or "cold" numbers, mathematically, every combination has an equal probability of being drawn. Our generator uses true random algorithms to ensure fair results.</p>
+                    
+                    <h3>Smart Playing Tips</h3>
+                    <ul>
+                        <li><strong>Mix Odd and Even:</strong> Most winning combinations have a balanced mix of odd and even numbers.</li>
+                        <li><strong>Avoid Consecutive Numbers:</strong> While possible, drawing three or more consecutive numbers is statistically rare.</li>
+                        <li><strong>Responsible Gaming:</strong> Always set a budget and never play with money you cannot afford to lose. The lottery is a form of entertainment, not a financial strategy.</li>
+                    </ul>
+
+                    <h3>Statistical Probability</h3>
+                    <p>The odds of winning a standard 6/45 lottery are approximately 1 in 8,145,060. Our tool helps you explore the vast space of possibilities by providing truly random selections, free from human bias.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="partnership" class="form-section">
+            <div class="container partnership-section">
+                <h2>Partnership & Support</h2>
+                <p>Have questions or business inquiries? Our team is here to help.</p>
+                <form action="https://formspree.io/f/xgopbnlb" method="POST" class="inquiry-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="How can we help you?" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn">Submit Inquiry</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="disqus-container">
+            <div class="container disqus-section">
+                <h2>Community Discussion</h2>
+                <div id="disqus_thread"></div>
+                <script>
+                    (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://brainfactoryvive.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>LottoGen Pro</h3>
+                    <p>Providing quality randomization tools since 2026.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" id="privacy-link">Privacy Policy</a></li>
+                        <li><a href="#" id="terms-link">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 LottoGen Pro. All rights reserved. Play responsibly.
+            </div>
         </div>
-        <button id="generator-btn">Generate Numbers</button>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal-container" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-body" class="modal-text"></div>
+        </div>
     </div>
 
-    <div class="container partnership-section">
-        <h2>Partnership Inquiry</h2>
-        <p>Interested in working together? Send us a message!</p>
-        <form action="https://formspree.io/f/xgopbnlb" method="POST" class="inquiry-form">
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-                <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-            </div>
-            <button type="submit" id="submit-btn">Send Message</button>
-        </form>
-    </div>
-
-    <div class="container disqus-section">
-        <div id="disqus_thread"></div>
-        <script>
-            (function() {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://brainfactoryvive.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
     <script src="main.js"></script>
 </body>
 </html>
